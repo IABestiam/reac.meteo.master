@@ -1,6 +1,5 @@
 import { Home } from "./pages/Home/Home";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
-import {NavigationContainer} from "@react-navigation/native"
 import { S } from "./App.style";
 import { ImageBackground } from "react-native";
 import backgroundIMG from "./assets/background.png"
@@ -12,7 +11,7 @@ export default function App() {
     "Alata-Regular" : AlataRegular
   })
   return(
-    <NavigationContainer>
+   
       <ImageBackground source={backgroundIMG} style={S.img_Background} imageStyle={S.img}>
         <SafeAreaProvider>
           <SafeAreaView style={S.container}>
@@ -20,7 +19,6 @@ export default function App() {
           </SafeAreaView>
         </SafeAreaProvider>
       </ImageBackground>
-    </NavigationContainer>
   );
 }
 
