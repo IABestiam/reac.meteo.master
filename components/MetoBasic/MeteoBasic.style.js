@@ -2,7 +2,8 @@ import { StyleSheet } from "react-native";
 
 const S= StyleSheet.create({
     clock: {
-        alignItems: "flex-end",
+      
+        justifyContent:"center"
     },
     weather_label: {
         alignSelf: "flex-end",
@@ -19,7 +20,7 @@ const S= StyleSheet.create({
         justifyContent: "space-between",
     },
     temperature: {
-        fontSize: 150,
+        fontSize: 120,
 
     }
 
